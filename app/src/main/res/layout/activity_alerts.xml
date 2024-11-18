@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcg"
+    tools:context=".Alerts">
+
+        <TextView
+            android:id="@+id/billAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Bill Amount"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/billAmountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Bill Amount"
+            android:layout_below="@id/billAmountLabel"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Remaining balance input -->
+        <TextView
+            android:id="@+id/remainingBalanceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Remaining Balance"
+            android:textSize="18sp"
+            android:layout_below="@id/billAmountInput"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/remainingBalanceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Remaining Balance"
+            android:layout_below="@id/remainingBalanceLabel"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Set reminder time -->
+        <TextView
+            android:id="@+id/reminderTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Reminder Time"
+            android:textSize="18sp"
+            android:layout_below="@id/remainingBalanceInput"
+            android:layout_marginTop="20dp"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reminderTimeLabel"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Set reminder button -->
+        <Button
+            android:id="@+id/setReminderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Reminder"
+            android:layout_below="@id/timePicker"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Month"
+        android:id="@+id/month"/>
+    <item android:title="Expense"
+        android:id="@+id/exp"/>
+    <item android:title="Balance"
+        android:id="@+id/bl"/>
+    <item android:title="Income"
+        android:id="@+id/income"/>
+</menu>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcg"
+    android:padding="25dp"
+    tools:context=".Me"
+    android:paddingTop="200dp">
+
+    <LinearLayout
+        android:layout_width="1200dp"
+        android:layout_height="20sp"
+        android:orientation="horizontal"
+        android:id="@+id/extra"
+        android:gravity="left"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:orientation="horizontal"
+        android:id="@+id/top"
+        android:layout_below="@+id/extra"
+        android:background="@color/black"
+        android:gravity="left"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="0sp"
+            android:src="@drawable/person_bd"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:fontFamily="times"
+            android:textColor="@color/white"
+            android:layout_marginStart="0dp"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second"
+        android:layout_below="@+id/top"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Clickable items -->
+
+            <TextView
+                android:id="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/rate_bd"
+                android:fontFamily="times"
+                android:focusable="true"
+                android:padding="16dp"
+                android:text="    Recommend to friends"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:text="    Rate App"
+                android:drawableStart="@drawable/rate2_bd"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="times"
+                android:text="    Settings"
+                android:drawableStart="@drawable/setting_bd"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- Add more items as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/third"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+
+
+        <GridLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second"
+            android:columnCount="5"
+            android:rowCount="6"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:id="@+id/record"
+                android:layout_columnWeight="0.25"
+                android:fontFamily="times"
+                android:drawableTop="@drawable/record_bd"
+                android:background="#00EEF3F4"
+                android:gravity="center"
+                android:text="Record" />
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:id="@+id/chart"
+                android:layout_columnWeight="0.25"
+                android:drawableTop="@drawable/chart_bd"
+                android:fontFamily="times"
+                android:background="#00EEF3F4"
+                android:gravity="center"
+                android:text="Charts"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:id="@+id/add"
+                android:layout_columnWeight="0.25"
+                android:fontFamily="times"
+                android:drawableTop="@drawable/add_bd"
+                android:background="#00EEF3F4"
+                android:gravity="center"
+                android:text="" />
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:id="@+id/report"
+                android:layout_columnWeight="0.25"
+                android:fontFamily="times"
+                android:drawableTop="@drawable/report_bd"
+                android:background="#00EEF3F4"
+                android:gravity="center"
+                android:text="Reports"
+                />
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:id="@+id/me"
+                android:layout_columnWeight="0.25"
+                android:fontFamily="times"
+                android:drawableTop="@drawable/me_bd"
+                android:background="#00EEF3F4"
+                android:gravity="center"
+                android:text="Me"
+                />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
