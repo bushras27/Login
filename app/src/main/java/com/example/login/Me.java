@@ -15,6 +15,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.github.mikephil.charting.charts.Chart;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -78,6 +79,33 @@ public class Me extends AppCompatActivity {
             addTextView.setOnClickListener(v -> showToast("Add clicked"));
             reportTextView.setOnClickListener(v -> showToast("Reports clicked"));
             meTextView.setOnClickListener(v -> showToast("Me clicked"));
+
+
+            // Example: Set click listeners for the bottom grid items
+            recordTextView.setOnClickListener(v-> {
+                Intent intent = new Intent(Me.this, Record.class);
+                startActivity(intent);
+            });
+
+            chartTextView.setOnClickListener(v -> {
+                Intent intent = new Intent(Me.this, Chart.class);
+                startActivity(intent);
+            });
+
+            addTextView.setOnClickListener(v -> {
+                Intent intent = new Intent(Me.this, Add.class);
+                startActivity(intent);
+            });
+
+            reportTextView.setOnClickListener(v -> {
+                Intent intent = new Intent(Me.this, Report.class);
+                startActivity(intent);
+            });
+
+            meTextView.setOnClickListener(v -> {
+                Intent intent = new Intent(Me.this, Me.class);
+                startActivity(intent);
+            });
         }
 
         private void showRecommendationPopup() {
@@ -141,30 +169,6 @@ public class Me extends AppCompatActivity {
             Toast.makeText(Me.this, message, Toast.LENGTH_SHORT).show();
         }
 
-    // Example: Set click listeners for the bottom grid items
-        recordTextView.setOnClickListener(v-> {
-        Intent intent = new Intent(Me.this, Record.class);
-        startActivity(intent);
-    });
 
-        chartTextView.setOnClickListener(v -> {
-        Intent intent = new Intent(Me.this, Chart.class);
-        startActivity(intent);
-    });
 
-        addTextView.setOnClickListener(v -> {
-        Intent intent = new Intent(Me.this, Add.class);
-        startActivity(intent);
-    });
-
-        reportTextView.setOnClickListener(v -> {
-        Intent intent = new Intent(Me.this, Report.class);
-        startActivity(intent);
-    });
-
-        meTextView.setOnClickListener(v -> {
-        Intent intent = new Intent(Me.this, Me.class);
-        startActivity(intent);
-    });
 }
-    }
