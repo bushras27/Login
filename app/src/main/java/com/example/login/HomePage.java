@@ -11,11 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager2.widget.ViewPager2;
-
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayoutMediator;
 
 public class HomePage extends AppCompatActivity {
 
@@ -127,7 +124,7 @@ public class HomePage extends AppCompatActivity {
         });
 
         chartTextView.setOnClickListener(v -> {
-            Intent intent = new Intent(HomePage.this, Chart.class);
+            Intent intent = new Intent(HomePage.this, ChartScreen.class);
             startActivity(intent);
         });
 
