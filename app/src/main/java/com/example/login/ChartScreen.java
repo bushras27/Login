@@ -16,7 +16,7 @@ import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 
 import java.util.ArrayList;
 
- class ChartActivity extends AppCompatActivity {
+public class ChartScreen extends AppCompatActivity {
 
     private TextView loadDataButton, expenseTextView, incomeTextView;
     private ProgressBar progressBar;
